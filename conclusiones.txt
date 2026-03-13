@@ -1,0 +1,15 @@
+Conclusiones
+
+Como autor de estos ejercicios para el proceso de selección de Devsu, he estructurado el proyecto enfocándome en la escalabilidad, la limpieza del código y la visibilidad de los resultados. Estas son mis principales conclusiones:
+
+1. Automatización de API (Karate)
+- Simplicidad y Potencia: Elegí Karate porque me permite crear pruebas de API robustas con una curva de aprendizaje mínima para el equipo. La capacidad de validar esquemas JSON completos (#string, #number) en una sola línea me permite garantizar que los contratos de la API se respeten estrictamente.
+- Flujos de Datos Reales: No me limité a pruebas aisladas; implementé un flujo CRUD completo para demostrar que puedo manejar el estado de la aplicación, asegurando que los datos creados fluyan correctamente a través de las operaciones de actualización y eliminación.
+
+2. Automatización E2E (Cypress + TypeScript)
+- Arquitectura para el Futuro: Mi decisión de usar Page Object Model (POM) y un PageManager no fue por exceso de ingeniería, sino por mantenimiento. Al centralizar los selectores y la lógica de negocio, cualquier cambio en la UI de SauceDemo se puede corregir en un solo lugar, sin romper decenas de pruebas.
+- Tipado Seguro: Con TypeScript, reduje los errores en tiempo de desarrollo. El uso de interfaces y comandos personalizados (cy.userlogin()) hace que el código sea auto-documentado y más fácil de extender por otros desarrolladores.
+- Valor para el Negocio: Implementé Allure Report porque entiendo que los reportes no son solo para los ingenieros, sino para los stakeholders. Poder ver capturas de pantalla de fallos y logs detallados acelera drásticamente el proceso de "debugging" y genera confianza en el proceso de QA.
+
+Resumen Final
+Este ejercicio me ha permitido demostrar mi compromiso con las mejores prácticas de ingeniería: código modular, desacoplamiento de datos, validaciones rigurosas y un enfoque orientado a resultados profesionales. 
