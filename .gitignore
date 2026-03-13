@@ -1,0 +1,43 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+target/
+.mvn/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.iws
+.settings/
+.classpath
+.project
+.factorypath
+
+# Karate
+karate-reports/
+*.log
+logback-test.xml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.restore
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Cypress
+.cypress
+cypress/screenshots/
+cypress/videos/
+.env
+
+# Build & Reports
+dist/
+build/
+allure-results/
+allure-report/
+logs/

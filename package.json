@@ -1,0 +1,16 @@
+{
+  "name": "devsu-monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo containing API (Karate) and E2E (Cypress) projects",
+  "private": true,
+  "workspaces": [
+    "E2E"
+  ],
+  "scripts": {
+    "api:test": "cd API && mvn test",
+    "api:report": "open API/target/karate-reports/karate-summary.html",
+    "e2e:install": "npm install -w E2E",
+    "e2e:test": "npm run test:qa -w E2E",
+    "e2e:open": "npm run open:qa -w E2E"
+  }
+}
