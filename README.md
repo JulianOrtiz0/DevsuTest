@@ -19,7 +19,7 @@ Desde la raíz del proyecto, puedes ejecutar los siguientes comandos:
 - Instalar dependencias: `npm run e2e:install`
 - Ejecutar pruebas (headless): `npm run e2e:test`
 - Abrir Cypress Runner: `npm run e2e:open`
-
+- Abrir reporte de pruebas: `npm run e2e:report`
 ---
 
 Configurado con **npm workspaces**.

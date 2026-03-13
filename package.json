@@ -11,6 +11,7 @@
     "api:report": "open API/target/karate-reports/karate-summary.html",
     "e2e:install": "npm install -w E2E",
     "e2e:test": "npm run test:qa -w E2E",
-    "e2e:open": "npm run open:qa -w E2E"
+    "e2e:open": "npm run open:qa -w E2E",
+    "e2e:report": "npm run allure:report -w E2E && npm run allure:open -w E2E"
   }
 }
