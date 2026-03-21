@@ -4,8 +4,8 @@ Background:
     * url baseUrl
     * def userData = read('user-data.json')
 
-Scenario: Crear, find, update and delete user 
-    #1 Crear Usuario (POST)
+Scenario: Create, find, update and delete user 
+    #1 Create User (POST)
     Given path "user"
     And request userData
     When method post
@@ -13,7 +13,7 @@ Scenario: Crear, find, update and delete user
 
     #2 Find User (GET)
     Given path 'user', userData.username
-    When method GET
+    When method get
     Then status 200
     And match response.username == userData.username
     And match response == 
